@@ -52,7 +52,7 @@ def homePost(request):
 def results(request, choice, gmat):
     print("*** Inside results()")
     # load saved model
-    with open('C:/PredictiveAnalyticsData/model_pkl' , 'rb') as f:
+    with open('model_pkl' , 'rb') as f:
         loadedModel = pickle.load(f)
 
     # Create a single prediction.
